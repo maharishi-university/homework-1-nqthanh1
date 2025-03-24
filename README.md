@@ -3,12 +3,14 @@
 # Requirements
 1. Set up an AWS Free Tier Account:
 * If you haven’t done so, create an AWS Free Tier account at AWS Sign-Up.
-* Use an email not associated with another AWS account.
+* Use an email not associated with another AWS account: 
+
 
 2. Add MFA for the root account:
 * Go to: AWS Console → IAM → Security Credentials.
 * Enable MFA: Choose "Virtual MFA" and use Google Authenticator/Authy.
 * Take a screenshot of the MFA setup confirmation.
+![MFA Confirmation](MFA.png)
 
 3. Create another account and work in this account from now on:
 * Go to: IAM → Users → Add User.
@@ -17,11 +19,13 @@
 * Set Console Access: Enable sign-in for this user.
 * Log out from the root account and only use this IAM user from now on.
 * Take a screenshot of the IAM user list.
+![Users](Users.png)
 
 4. Use your root account to create Billing Alert:
 * Go to: Billing Dashboard → Preferences.
 * Enable billing alerts and set up an email notification.
 * Take a screenshot of the billing alert settings.
+![Billing Alert](<Billing Alert.png>)
 
 5. Use your root account to create Budget Alert:
 * Go to: AWS Budgets → Create Budget.
@@ -29,4 +33,5 @@
 * Threshold: $1 (or Free Tier limit).
 * Notification: Send email alerts when spending approaches the limit.
 * Take a screenshot of the budget alert setup.
+![Budget Alerts](<Budget Alerts.png>)
 ## Submit the above screenshots.
